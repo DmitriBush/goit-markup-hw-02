@@ -1,0 +1,203 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: #212121;
+}
+
+.logo-link {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-header {
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header navigation */
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+.site-link .mail-link,
+.site-link .tel-link {
+  color: var(--title-text-color);
+}
+
+.site-link .mail-link:hover,
+.site-link .mail-link:focus {
+  color: var(--accent-color);
+}
+
+.site-link .tel-link:hover,
+.site-link .tel-link:focus {
+  color: var(--accent-color);
+}
+
+/* hero section */
+
+.hero {
+  background-color: #2f303a;
+  color: var(--primary-white-color);
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  color: #757575;
+}
+
+/* Section filter button */
+
+.filter-button {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+.list .filter-button:hover,
+.list .filter-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.subject {
+  opacity: 0;
+}
+
+/* Section Accent */
+
+.headline {
+  font-size: 14px;
+  line-height: 1.14;
+  width: 700;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--title-text-color);
+}
+
+/* Work examples */
+
+.hide {
+  opacity: 0;
+}
+
+.project-name {
+  line-height: 1.77;
+  font-size: 18px;
+  color: var(--primary-text-color);
+}
+.list .project-type {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+
+/* Section Production */
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Section Team */
+
+.caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.01;
+}
+
+.job-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.01;
+  color: var(--title-text-color);
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+.maps {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.link .mail-link-footer,
+.link .tel-link-footer {
+  color: var(--title-text-color);
+}
+
+.link .mail-link-footer:hover,
+.link .mail-link-footer:focus {
+  color: var(--title-text-color);
+}
+
+.link .tel-link-footer:hover,
+.link .tel-link-footer:focus {
+  color: var(--title-text-color);
+}
+
+.mail-link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.tel-link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
