@@ -3,17 +3,23 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #2f303a;
+  --detail-color: #2f303a;
+  --extra-color: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  color: #212121;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--background-color);
 }
 
 .logo-link {
-  color: #2196f3;
-  font-family: Raleway;
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -32,23 +38,20 @@ ul {
 
 /* Header navigation */
 
-.link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
+.site-nav .link-current {
+  color: var(--accent-color);
 }
 
 .site-nav .link {
   color: var(--primary-text-color);
+  letter-spacing: 0.02;
+  font-weight: 500;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: #2196f3;
 }
 
 .site-link .mail-link,
@@ -69,34 +72,56 @@ ul {
 /* hero section */
 
 .hero {
-  background-color: #2f303a;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.hero-title {
+  background-color: var(--secondary-background-color);
   color: var(--primary-white-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 
 .button-primary {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  color: #757575;
+  color: var(--title-text-color);
 }
 
 /* Section filter button */
 
 .filter-button {
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+  background-color: var(--extra-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
-.list .filter-button:hover,
-.list .filter-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+.filters-list .filter-button:hover,
+.filters-list .filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .subject {
-  opacity: 0;
+  visibility: hidden;
 }
 
 /* Section Accent */
@@ -105,29 +130,40 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   width: 700;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .text {
   font-size: 14px;
-  line-height: 1.71;
   color: var(--title-text-color);
+  font-weight: 400;
+  line-height: 1.41;
+  letter-spacing: 0.03em;
 }
 
 /* Work examples */
 
 .hide {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .project-name {
-  line-height: 1.77;
   font-size: 18px;
   color: var(--primary-text-color);
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
 }
-.list .project-type {
-  font-size: 16px;
-  line-height: 1.19;
+.project-type {
   color: var(--title-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 /* Section Production */
@@ -135,9 +171,8 @@ ul {
 .heading {
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 /* Section Team */
@@ -158,8 +193,8 @@ ul {
 /* Footer */
 
 .page-footer {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--detail-color);
+  color: var(--primary-white-color);
 }
 
 .logo-footer {
@@ -167,7 +202,7 @@ ul {
 }
 
 .maps {
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -200,4 +235,8 @@ ul {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
+}
+
+.link {
+  font-style: normal;
 }
